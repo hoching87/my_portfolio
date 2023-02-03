@@ -4,6 +4,7 @@ import report from './report.pdf'
 import report2 from './Medeval2D.pdf'
 import pic1 from './Picture1.png'
 import pic2 from './Picture2.png'
+import icon from './icon.png'
 
 import './App.css'
 import Container from 'react-bootstrap/Container'
@@ -27,20 +28,18 @@ function App() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
         <Container>
           <Navbar.Brand onClick={() => window.scrollTo(0, 0)}>
-            <Nav.Link>My Portfolio</Nav.Link>
+            <Nav.Link>
+              <img src={icon} width="35em" style={{ paddingRight: '5px' }}></img>My Portfolio
+            </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link onClick={() => window.location.replace('/#about')}>About Me</Nav.Link>
-              <Nav.Link onClick={() => window.location.replace('/#fyp')}>
-                Final Year Project
-              </Nav.Link>
-              <Nav.Link onClick={() => window.location.replace('/#minor')}>
-                Other Minor Project
-              </Nav.Link>
-              <Nav.Link onClick={() => window.location.replace('/#resume')}>My Resume</Nav.Link>
-              <Nav.Link onClick={() => window.location.replace('/#contact')}>Contact</Nav.Link>
+              <Nav.Link href="#about">About Me</Nav.Link>
+              <Nav.Link href="#fyp">Final Year Project</Nav.Link>
+              <Nav.Link href="#minor">Other Minor Project</Nav.Link>
+              <Nav.Link href="#resume">My Resume</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
