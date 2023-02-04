@@ -110,7 +110,8 @@ function App() {
                 ONLINE BEAUTY & SPA APPOINTMENT BOOKING SYSTEM WITH PRODUCTS/SERVICES RECOMMENDATION
               </b>
               <br></br>
-              <img src={pic2} /> <img src={pic1} />
+              <img src={pic2} style={{ maxWidth: '100vw' }} />{' '}
+              <img src={pic1} style={{ maxWidth: '100vw' }} />
               <br></br>A full stack web application build with Next.js, Express.js and MongoDB.
               Contain all basic functionalities of a booking apps such as users, products, services
               and booking management. The project is tested using end-to-end testing library
